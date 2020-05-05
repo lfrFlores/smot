@@ -1,1 +1,107 @@
-Hola viejo 
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>SMOT</title>
+    <link rel="icon" href="https://lh3.googleusercontent.com/mEA47imzyjA6FmVO-b-FllzrL5Yjs8B6u-vn8gaHNCrPtakFe_azP7Dq07hV5WVoNiUe=s180-rw" />
+  </head>
+  <body>
+    <div style ="margin-left: 30px;margin-top: 30px;margin-bottom: 25px;margin-right: 30px;" class="row ">
+      <div  class="col-sm-4">
+        <div align="center" class="card bg-warning">
+          <div class="card-body">
+            <h5 class="text-center" class="card-title">Descarga nuestras aplicaciones en Google Play</h5>
+            <div class="card bg-light mb-2" style="max-width: 18rem;">
+            <div class="card-header">SMOT</div>
+              <div class="card-body">
+                <h5 class="card-title">Descripción:</h5>
+                <p class="card-text">Regístarate para solicitar una moto.</p>
+                <img style="width: 40%" src="https://lh3.googleusercontent.com/mEA47imzyjA6FmVO-b-FllzrL5Yjs8B6u-vn8gaHNCrPtakFe_azP7Dq07hV5WVoNiUe=s180-rw" alt="">
+                <a  type="button" class="btn btn-outline-warning btn-warning text-dark" target="_blank" href="https://play.google.com/store/apps/details?id=com.flores.luis.smot">Descargar</a>
+              </div>
+          </div>
+        <div class="card bg-light mb-2" style="max-width: 18rem;">
+          <div class="card-header">SMOT CONDUCTOR</div>
+          <div class="card-body">
+            <h5 class="card-title">Descripción:</h5>
+            <p class="card-text">Regístrate para conducir con la Applicación móvil.</p>
+            <img style="width: 40%" src="https://lh3.googleusercontent.com/DIpjZFj8CRqh8gbznvl9EWX6EcSWuoViofdf9yemLx-IpcYr2y1CE3hjwhbrRNZjSug=s180-rw" alt="">
+            <a  type="button" class="btn btn-outline-warning btn-warning text-dark" target="_blank" href="https://play.google.com/store/apps/details?id=com.flores.luis.smot_driver">Descargar</a>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8" >
+        <div class="card">
+          <div class="card-body">
+            <div align="center">
+                <div class="card text-center bg-warning" style="width: 100%;">
+                <img src="https://municarhuamayo.gob.pe/wp-content/uploads/2020/03/pagina-en-construccic3b3n-es-copia.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-text">Este sitio está desactivado vuelve en: </h2>
+                <h3><b> <div id="countdown"></div><b></h3>
+                  <div align="center" class="card bg-warning">
+                    <div class="card-body">
+                      <div class="card bg-light mb-2" style="max-width: 18rem;">
+                      <div class="card-header">Síguenos en:</div>
+                        <div class="card-body">
+                          <a href="https://www.facebook.com/SMOT-2223540291222917/" target="_blank"><img alt="Siguenos en Facebook" src="https://lh3.googleusercontent.com/-NSLbC_ztNls/T6VX0g6z8AI/AAAAAAAAA0A/_vyIBrmZbuY/s48/facebook48.png" width=48 height=48  /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+    var end = new Date('08/05/2020 2:55 PM');
+
+        var _second = 1000;
+        var _minute = _second * 60;
+        var _hour = _minute * 60;
+        var _day = _hour * 24;
+        var timer;
+
+        function showRemaining() {
+            var now = new Date();
+            var distance = end - now;
+            if (distance < 0) {
+
+                clearInterval(timer);
+                document.getElementById('countdown').innerHTML = 'EXPIRED!';
+
+                return;
+            }
+            var days = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
+            var seconds = Math.floor((distance % _minute) / _second);
+
+            document.getElementById('countdown').innerHTML = days + ' días, ';
+            document.getElementById('countdown').innerHTML += hours + ' horas, ';
+            document.getElementById('countdown').innerHTML += minutes + ' minutos y ';
+            document.getElementById('countdown').innerHTML += seconds + ' segundos';
+        }
+
+        timer = setInterval(showRemaining, 1000);
+    </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
